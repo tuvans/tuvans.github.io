@@ -82,6 +82,7 @@ This files contents are outlined below.
 .tittle {
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 50px;
 }
 .tittle h2 {
   font: 400 24px "Oswald", sans-serif;
@@ -682,7 +683,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 .what_we_area .construction_iner {
   padding-top: 60px;
-  padding-bottom: 70px;
+  /*padding-bottom: 70px;*/
 }
 .what_we_area .construction_iner .construction {
   text-align: center;
