@@ -6,7 +6,8 @@ var config = {
     storageBucket: "tuvans-khachhang.appspot.com",
     messagingSenderId: "29846595376"
   };
-  firebase.initializeApp(config);
+  
+firebase.initializeApp(config);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
@@ -34,7 +35,7 @@ function submitForm(e){
   // Hide alert after 3 seconds
   setTimeout(function(){
     document.querySelector('.alert').style.display = 'none';
-  },3000);
+  }, 3000);
 
   // Clear form
   document.getElementById('contactForm').reset();
@@ -50,9 +51,9 @@ function saveMessage(name, email, phone, linkedin, message){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
-    email:email,
-    phone:phone,
-    linkedin:linkedin,
-    message:message
+    email: email,
+    phone: phone,
+    linkedin: linkedin,
+    message: message
   });
 }

@@ -1,19 +1,18 @@
 var config = {
-    apiKey: "AIzaSyAM8S2wfezrCTt6JvjPgB3ooLOYHxOij-g",
-    authDomain: "tuvans-tuvan.firebaseapp.com",
-    databaseURL: "https://tuvans-tuvan.firebaseio.com",
-    projectId: "tuvans-tuvan",
-    storageBucket: "tuvans-tuvan.appspot.com",
-    messagingSenderId: "773698577966"
-  };
-  firebase.initializeApp(config);
-
+  apiKey: "AIzaSyCk0ymQ2cFe0krSBKdf2uD7SXPBUxLK74Y",
+  authDomain: "tuvans-tuvan-info.firebaseapp.com",
+  databaseURL: "https://tuvans-tuvan-info.firebaseio.com",
+  projectId: "tuvans-tuvan-info",
+  storageBucket: "",
+  messagingSenderId: "181905799222"
+};
+firebase.initializeApp(config);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
-document.getElementById('contactForm').addEventListener('submit', submitForm);
+document.getElementById('contactFormTuvans').addEventListener('submit', submitForm);
 
 // Submit form
 function submitForm(e){
