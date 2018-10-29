@@ -28,7 +28,7 @@ function submitForm(e){
   },3000);
 
   // Clear form
-  document.getElementById('contactForm').reset();
+  document.getElementById('contactFormTuvans').reset();
 }
 
 // Function to get get form values
