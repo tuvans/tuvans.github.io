@@ -156,7 +156,21 @@
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
     <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"6489511a8f6063939a73bfc48","lid":"6aa126422a","uniqueMethods":false}) })</script>
     
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
+
+    <script>
+        var config = {
+            apiKey: "AIzaSyBGslloVNqzoyzK_Ri06TzPt-tjU_NSH94",
+            authDomain: "tuvans-khachhang.firebaseapp.com",
+            databaseURL: "https://tuvans-khachhang.firebaseio.com",
+            projectId: "tuvans-khachhang",
+            storageBucket: "tuvans-khachhang.appspot.com",
+            messagingSenderId: "29846595376"
+        };
+        firebase.initializeApp(config);
+    </script>
+
     <script src="js/other.js"></script>
     <!-- jQuery JS -->
     <script src="js/jquery-1.12.0.min.js"></script>

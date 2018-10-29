@@ -1,16 +1,6 @@
-var config = {
-    apiKey: "AIzaSyBGslloVNqzoyzK_Ri06TzPt-tjU_NSH94",
-    authDomain: "tuvans-khachhang.firebaseapp.com",
-    databaseURL: "https://tuvans-khachhang.firebaseio.com",
-    projectId: "tuvans-khachhang",
-    storageBucket: "tuvans-khachhang.appspot.com",
-    messagingSenderId: "29846595376"
-  };
-  
-firebase.initializeApp(config);
-
 // Reference messages collection
-var messagesRef = firebase.database().ref('messages');
+var database = firebase.database();
+var messagesRef = database.ref('messages');
 
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
