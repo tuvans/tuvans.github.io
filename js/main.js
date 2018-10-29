@@ -3,7 +3,7 @@ var config = {
   authDomain: "tuvans-tuvan-info.firebaseapp.com",
   databaseURL: "https://tuvans-tuvan-info.firebaseio.com",
   projectId: "tuvans-tuvan-info",
-  storageBucket: "",
+  storageBucket: "tuvans-tuvan-info.appspot.com",
   messagingSenderId: "181905799222"
 };
 firebase.initializeApp(config);
